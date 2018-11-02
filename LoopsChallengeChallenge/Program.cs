@@ -8,17 +8,20 @@ namespace LoopsChallengeChallenge
 {
     class Program
     {
+
+        static string response = "";
+        static string name = "";
+        static int age = 0;
+        static string year = "";
+        static int yearAge = 0;
+        static int carMileage = 0;
+        static int mileageDivide = 0;
+        static string accident = "";
+        static decimal charge = 0m;
+
         static void Main(string[] args)
         {
-            string response = "";
-            string name = "";
-            int age = 0;
-            string year = "";
-            int yearAge = 0;
-            int carMileage = 0;
-            int mileageDivide = 0;
-            string accident = "";
-            decimal charge = 0m;
+
 
             while (response != "close")
             {
@@ -62,40 +65,6 @@ namespace LoopsChallengeChallenge
                             Console.WriteLine("Have you been involved in any accidents (Y/N)?");
                             accident = Console.ReadLine();
 
-                            if (age >= 25)
-                                charge += 75m;
-                            else
-                                charge += 125m;
-
-                            if (yearAge < 5)
-                                charge += 75m;
-                            else if (yearAge > 15)
-                                charge += 150m;
-                            else
-                                charge += 100m;
-
-                            if (accident == "Y")
-                                charge += 25m;
-
-                            switch (mileageDivide)
-                            {
-                                case 1:
-                                    charge += 25m;
-                                    break;
-                                case 2:
-                                    charge += 50m;
-                                    break;
-                                case 3:
-                                    charge += 75m;
-                                    break;
-                                case 4:
-                                    charge += 100m;
-                                    break;
-                                default:
-                                    charge += 125m;
-                                    break;
-                            }
-
                             Console.WriteLine("'return' to menu");
                             response = Console.ReadLine();
                             Console.Clear();
@@ -106,7 +75,7 @@ namespace LoopsChallengeChallenge
                             Console.WriteLine($"Vehicle Year: {year}");
                             Console.WriteLine($"Vehicle Mileage: {carMileage}");
                             Console.WriteLine($"Accidents(Y/N): {accident}");
-                            Console.WriteLine($"Insurance Premium: {charge}");
+                            Console.WriteLine($"Insurance Premium: {Premium()}");
                             Console.WriteLine("'return' to menu");
                             response = Console.ReadLine();
                             Console.Clear();
@@ -120,6 +89,44 @@ namespace LoopsChallengeChallenge
             }
             Console.WriteLine("Have a great day!");
             Console.ReadLine();
+        }
+
+        static decimal Premium()
+        {
+            if (age >= 25)
+                charge += 75m;
+            else
+                charge += 125m;
+
+            if (yearAge < 5)
+                charge += 75m;
+            else if (yearAge > 15)
+                charge += 150m;
+            else
+                charge += 100m;
+
+            if (accident == "Y")
+                charge += 25m;
+
+            switch (mileageDivide)
+            {
+                case 1:
+                    charge += 25m;
+                    break;
+                case 2:
+                    charge += 50m;
+                    break;
+                case 3:
+                    charge += 75m;
+                    break;
+                case 4:
+                    charge += 100m;
+                    break;
+                default:
+                    charge += 125m;
+                    break;
+            }
+            return charge;
         }
     }
 }

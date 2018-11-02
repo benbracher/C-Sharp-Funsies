@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04_Loops_Example_1", "04_Lo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LoopsChallengeChallenge", "LoopsChallengeChallenge\LoopsChallengeChallenge.csproj", "{2A2ECD4C-38F4-4A91-8B13-ED7C79B23539}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05_Methods", "05_Methods\05_Methods.csproj", "{2236AFFA-C3D8-4DFC-B9E6-27AE6CC846EE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +53,10 @@ Global
 		{2A2ECD4C-38F4-4A91-8B13-ED7C79B23539}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2A2ECD4C-38F4-4A91-8B13-ED7C79B23539}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2A2ECD4C-38F4-4A91-8B13-ED7C79B23539}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2236AFFA-C3D8-4DFC-B9E6-27AE6CC846EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2236AFFA-C3D8-4DFC-B9E6-27AE6CC846EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2236AFFA-C3D8-4DFC-B9E6-27AE6CC846EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2236AFFA-C3D8-4DFC-B9E6-27AE6CC846EE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
