@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace _06_Classes_03
 {
-    class Customer
+    public class Customer
     {
         public int Age { get; set; }
         public string FirstName { get; set; }
@@ -19,6 +19,11 @@ namespace _06_Classes_03
             LastName = lastName;
             Age = age;
             Address = address;
+        }
+
+        public Customer()
+        {
+
         }
     }
 }

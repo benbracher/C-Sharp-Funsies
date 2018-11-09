@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace _06_Classes_03
 {
-    class Vehicle
+    public class Vehicle
     {
         public string Make { get; set; }
         public string Model { get; set; }
@@ -20,6 +20,11 @@ namespace _06_Classes_03
             Model = model;
             ModelYear = modelYear;
             Owner = owner;
+        }
+        
+        public Vehicle()
+        {
+
         }
     }
 }
