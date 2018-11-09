@@ -80,9 +80,9 @@ namespace _06_Classes_03
         public static void RegisterVehicle(Vehicle newVehicle)
         {
 
-            ReceiveUserInfo();
-            //vehicles.Clear();
-            vehicles.Add(newVehicle);
+            var vehicle = ReceiveUserInfo();
+            vehicles.Clear();
+            vehicles.Add(vehicle);
             Console.WriteLine("Press any key to return to menu...");
             menu = true;
             Console.ReadLine();
@@ -91,8 +91,8 @@ namespace _06_Classes_03
 
         public static void AddNewVehicle(Vehicle newVehicle)
         {
-            ReceiveUserInfo();
-            vehicles.Add(newVehicle);
+            var vehicle = ReceiveUserInfo();
+            vehicles.Add(vehicle);
             Console.WriteLine("Press any key to return to menu...");
             menu = true;
             Console.ReadLine();

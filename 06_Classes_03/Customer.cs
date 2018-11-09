@@ -21,6 +21,4 @@ namespace _06_Classes_03
             Address = address;
         }
     }
-
-
 }

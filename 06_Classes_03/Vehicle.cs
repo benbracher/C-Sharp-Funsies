@@ -21,15 +21,5 @@ namespace _06_Classes_03
             ModelYear = modelYear;
             Owner = owner;
         }
-        public Vehicle()
-        {
-
-        }
-        public Vehicle(string make, string model, int modelYear)
-        {
-            Make = make;
-            Model = model;
-            ModelYear = modelYear;
-        }
     }
 }

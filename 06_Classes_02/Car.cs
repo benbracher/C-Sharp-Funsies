@@ -6,7 +6,13 @@ using System.Threading.Tasks;
 
 namespace _06_Classes_02
 {
-    public class Class1
+    public class Car
     {
+        public string ExteriorColor { get; set; }
+        public string InteriorColor { get; set; }
+        public string EngineType { get; set; }
+        public int NumberOfWheels { get; set; }
+        public int Mileage { get; set; }
+        public int ModelYear { get; set; }
     }
 }
